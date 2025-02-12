@@ -9,14 +9,27 @@ import pages.*;
 
 public class GuicePageModule extends AbstractModule {
     private Page page;
+    private BrowserContext context;
 
     public GuicePageModule() {
         Playwright playwright = Playwright.create();
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         BrowserContext context = browser.newContext();
+
+        context.tracing().start(new Tracing.StartOptions()
+                .setSnapshots(true)
+                .setScreenshots(true)
+                .setSources(true));
+
+        this.context = context;
         this.page = context.newPage();
     }
 
+    @Singleton
+    @Provides
+    public BrowserContext getContext() {
+        return context;
+    }
 
     @Singleton
     @Provides
@@ -35,6 +48,10 @@ public class GuicePageModule extends AbstractModule {
     @Singleton
     @Provides
     public TeacherPage teacherPage() {return new TeacherPage(page);}
+
+    @Singleton
+    @Provides
+    public CustomCoursesPage customCoursesPage() {return new CustomCoursesPage(page);}
 
 
 
