@@ -53,6 +53,8 @@ public class GuicePageModule extends AbstractModule {
     @Provides
     public CustomCoursesPage customCoursesPage() {return new CustomCoursesPage(page);}
 
-
+    @Singleton
+    @Provides
+    public SubscriptionPage subscriptionPage() {return new SubscriptionPage(page);}
 
 }
