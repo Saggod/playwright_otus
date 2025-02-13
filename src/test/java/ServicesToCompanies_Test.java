@@ -3,7 +3,6 @@ import extensions.junit.UIExtensions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import pages.CatalogCoursesPage;
-import pages.ClickhousePage;
 import pages.CustomCoursesPage;
 
 @ExtendWith(UIExtensions.class)

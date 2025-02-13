@@ -3,8 +3,6 @@ package pages;
 import annotations.Path;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
-import exceptions.PathNotValidExeption;
-import org.junit.jupiter.api.DisplayName;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 

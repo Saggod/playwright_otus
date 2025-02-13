@@ -1,7 +1,6 @@
 package pages;
 
 import annotations.Path;
-import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 import java.util.regex.Pattern;

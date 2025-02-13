@@ -3,11 +3,9 @@ import extensions.junit.UIExtensions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import pages.SubscriptionPage;
-
 import java.util.Arrays;
 import java.util.List;
 
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 @ExtendWith(UIExtensions.class)
 public class Subscription_Test {
