@@ -1,6 +1,5 @@
 package extensions.junit;
 
-
 import java.nio.file.Paths;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -24,6 +23,6 @@ public class UIExtensions implements BeforeEachCallback, AfterEachCallback {
 
     @Override
     public void afterEach(ExtensionContext context) {
-        injector.getProvider(BrowserContext.class).get().tracing().stop(new Tracing.StopOptions().setPath(Paths.get( "trace.zip")));
+        injector.getProvider(BrowserContext.class).get().tracing().stop(new Tracing.StopOptions().setPath(Paths.get("trace.zip")));
     }
 }

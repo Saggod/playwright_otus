@@ -1,13 +1,13 @@
 package pages;
 
-import annotations.Path;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import annotations.Path;
 
 @Path("/")
 public class MianPage extends AbsBasePage {
 
-    public MianPage (Page page) {
+    public MianPage(Page page) {
         super(page);
     }
 

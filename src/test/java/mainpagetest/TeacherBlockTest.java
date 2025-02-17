@@ -1,4 +1,4 @@
-package mainPageTest;
+package mainpagetest;
 
 import com.google.inject.Inject;
 import extensions.junit.UIExtensions;

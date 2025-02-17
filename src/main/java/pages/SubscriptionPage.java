@@ -2,11 +2,12 @@ package pages;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.util.List;
-import annotations.Path;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import org.junit.jupiter.api.DisplayName;
+import annotations.Path;
 
 @Path("/subscription")
 public class SubscriptionPage extends AbsBasePage {
@@ -50,7 +51,7 @@ public class SubscriptionPage extends AbsBasePage {
 
     @DisplayName("Проверка отображения суммы на страниц оплаты")
     public void checkSummOnPaymentPageIsPresent(String summ) {
-       assertThat(page.getByText(summ)).isVisible();
+        assertThat(page.getByText(summ)).isVisible();
     }
 
     @DisplayName("")
