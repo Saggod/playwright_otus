@@ -6,7 +6,7 @@ import pages.CatalogCoursesPage;
 import pages.CustomCoursesPage;
 
 @ExtendWith(UIExtensions.class)
-public class ServicesToCompanies_Test {
+public class ServicesToCompaniesTest {
 
     @Inject
     private CatalogCoursesPage catalogCoursesPage;

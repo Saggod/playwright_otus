@@ -1,5 +1,6 @@
 package pages;
 
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import annotations.Path;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Mouse;
@@ -7,8 +8,6 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.BoundingBox;
 import org.junit.jupiter.api.DisplayName;
-
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 @Path("/lessons/clickhouse/")
 public class ClickhousePage extends AbsBasePage {

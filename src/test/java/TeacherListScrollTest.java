@@ -5,7 +5,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import pages.ClickhousePage;
 
 @ExtendWith(UIExtensions.class)
-public class TeacherListScroll_Test {
+public class TeacherListScrollTest {
 
     @Inject
     private ClickhousePage clickhousePage;

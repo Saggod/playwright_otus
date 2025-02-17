@@ -1,6 +1,7 @@
 package extensions.junit;
 
 
+import java.nio.file.Paths;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.microsoft.playwright.BrowserContext;
@@ -9,8 +10,6 @@ import extensions.GuicePageModule;
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
-
-import java.nio.file.Paths;
 
 public class UIExtensions implements BeforeEachCallback, AfterEachCallback {
 

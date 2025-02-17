@@ -6,9 +6,8 @@ import pages.SubscriptionPage;
 import java.util.Arrays;
 import java.util.List;
 
-
 @ExtendWith(UIExtensions.class)
-public class Subscription_Test {
+public class SubscriptionTest {
     List<String> subscriptionOptions = Arrays.asList("Trial", "Standard", "Professional");
     String paymentSumm = "160 000";
 

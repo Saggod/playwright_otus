@@ -1,11 +1,9 @@
 package pages;
 
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import annotations.Path;
 import com.microsoft.playwright.Page;
-
 import java.util.regex.Pattern;
-
-import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
 @Path("/")
 public class TeacherPage extends AbsBasePage {

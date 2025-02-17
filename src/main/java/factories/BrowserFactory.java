@@ -2,7 +2,6 @@ package factories;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
-
 import com.microsoft.playwright.Playwright;
 
 public class BrowserFactory {

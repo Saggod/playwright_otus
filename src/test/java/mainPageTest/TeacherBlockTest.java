@@ -1,5 +1,4 @@
-package mainPage_Test;
-
+package mainPageTest;
 
 import com.google.inject.Inject;
 import extensions.junit.UIExtensions;
@@ -9,7 +8,7 @@ import pages.MianPage;
 import pages.TeacherPage;
 
 @ExtendWith(UIExtensions.class)
-public class TeacherBlock_Test {
+public class TeacherBlockTest {
 
     @Inject
     private MianPage mianPage;

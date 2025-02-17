@@ -73,7 +73,7 @@
                 <version>${checkstyle.version}</version>
                 <configuration>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
-                    <configLocation>checkstyle.xml</configLocation>
+                    <configLocation>src/main/resources/checkstyle.xml</configLocation>
                 </configuration>
                 <executions>
                     <execution>

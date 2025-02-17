@@ -1,16 +1,14 @@
 package pages;
 
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import annotations.Path;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import com.microsoft.playwright.options.BoundingBox;
 import org.junit.jupiter.api.DisplayName;
-
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Path("/catalog/courses")
 public class CatalogCoursesPage extends AbsBasePage {
