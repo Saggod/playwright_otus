@@ -16,7 +16,7 @@ public class SubscriptionPage extends AbsBasePage {
         super(page);
     }
 
-    Locator summField = page.locator(String.format("//section[2]//span//text()[1]"));
+    Locator summField = page.locator("//section[2]//span//text()[1]");
 
     @DisplayName("В блоке «Варианты подписок» проверить, что отображаются варианты подписки")
     public void checkSubscriptionOptionsIsExist(List<String> expectedOptionsList) {
@@ -54,12 +54,11 @@ public class SubscriptionPage extends AbsBasePage {
         assertThat(page.getByText(summ)).isVisible();
     }
 
-    @DisplayName("")
     public void choseAnotherTypeSubs() {
         page.locator("//*[@id=\"radio-base-trial\"]").click();  //тут name дбвляется в url
     }
 
-    @DisplayName("")
+    @DisplayName("Проверка суммы")
     public void checkSummIsChanged(String summ) {
         assertThat(page.getByText(summ)).not().isVisible();
     }

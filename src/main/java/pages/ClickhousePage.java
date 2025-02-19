@@ -50,12 +50,12 @@ public class ClickhousePage extends AbsBasePage {
     }
     @DisplayName("Нажимаю на кнопку >")
     public void clickOnButtonScrollRight() {
-        page.locator("//button[@class='sc-1bkbgbz-2 sc-1bkbgbz-3 dQreKk iPzpLW']").click();
+        page.locator("//div[contains(@class, 'eTWzoY')]//button[contains(@class, 'iPzpLW')]").click();
     }
 
     @DisplayName("Нажимаю на кнопку <")
     public void clickOnButtonScrollLeft() {
-        page.locator("//button[@class='sc-1bkbgbz-2 sc-1bkbgbz-4 dQreKk biZjNh']").click();
+        page.locator("//div[contains(@class, 'eTWzoY')]//button[contains(@class, 'biZjNh')]").click();
     }
 
     @DisplayName("Проверяю, что открыт popup другого преподавателя")
